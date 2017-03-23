@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <world name='default'>
+
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>24.4793194</latitude_deg>
+      <longitude_deg>54.6105446</longitude_deg>
+      <elevation>18</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+    <!-- A global light source -->
+   <scene>
+      <sky>
+        <clouds>
+          <speed>12</speed>
+        </clouds>
+      </sky>
+   </scene>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!--
+    <light name='point_light_0' type='point'>
+      <pose frame=''>22.5 0 3 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.1</constant>
+        <linear>0.1</linear>
+        <quadratic>0.01</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+    -->
+    <include>
+      <uri>model://arena</uri>
+    </include>
+
+    <!-- this is for gazebo 1.5 -->
+    <!-- <population name="small_cylinder" > -->
+    <!--   <model name="small_cylinder1" > -->
+    <!--     <include> -->
+    <!--       <uri>model://small_cylinder</uri> -->
+    <!--     </include> -->
+    <!--   </model> -->
+    <!--   <model_count>10</model> -->
+    <!--   <distribution> -->
+    <!--     <type>random</type> -->
+    <!--   </distribution> -->
+    <!-- </population> -->
+    <model name="green_large_cylinder" >
+      <pose>24 -20 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_large_green</uri>
+      </include>
+   </model>
+   
+   <model name="blue_large_cylinder" >
+      <pose>16 4 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_large_blue</uri>
+      </include>
+     
+    </model>
+
+    <model name="yellow_large_cylinder" >
+      <pose>0 0 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_large_yellow</uri>
+      </include>
+   </model>
+
+    <model name="orange_large_cylinder" >
+      <pose>15 14 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_large_orange</uri>
+      </include>
+      
+    </model>
+
+    <model name="pink_large_cylinder" >
+      <pose>-36 10 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_large_pink</uri>
+      </include>
+      
+    </model>
+
+
+    <model name="cyan_large_cylinder" >
+      <pose>-31 18 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_large_cyan</uri>
+      </include>
+     
+    </model>
+
+     <model name="red_large_cylinder" >
+      <pose>26 -8 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_large_red</uri>
+      </include>
+     
+    </model>
+
+    <model name="green_small_cylinder" >
+      <pose>-4 25 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_small_green</uri>
+      </include>
+      
+    </model>
+
+    <model name="blue_small_cylinder" >
+      <pose>9 19 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_small_blue</uri>
+      </include>
+     
+    </model>
+
+    <model name="yellow_small_cylinder" >
+      <pose>40 -20 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_small_yellow</uri>
+      </include>
+
+    </model>
+
+    <model name="orange_small_cylinder" >
+      <pose>42 -8 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_small_orange</uri>
+      </include>
+
+    </model>
+
+    <model name="pink_small_cylinder" >
+      <pose>2 -20 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_small_pink</uri>
+      </include>
+
+    </model>
+
+    <model name="cyan_small_cylinder" >
+      <pose>43 5 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_small_cyan</uri>
+      </include>
+      
+    </model>
+
+    <model name="red_small_cylinder" >
+      <pose>31 9 0 0 0 0</pose>
+      <include>
+        <uri>model://cylinder_small_red</uri>
+      </include>
+      
+    </model>
+
+    <model name="green_large_rectangle" >
+      <pose>-41 -20 0 0 0 0</pose>
+      <include>
+        <uri>model://rectangle_large_green</uri>
+      </include>
+
+    </model>
+
+    <model name="blue_large_rectangle" >
+      <pose>-40 -2 0 0 0 0</pose>
+      <include>
+        <uri>model://rectangle_large_blue</uri>
+      </include>
+
+    </model>
+
+
+    <model name="yellow_large_rectangle" >
+      <pose>-29 27 0 0 0 0</pose>
+      <include>
+        <uri>model://rectangle_large_yellow</uri>
+      </include>
+      
+    </model>
+
+    <model name="orange_large_rectangle" >
+      <pose>42 24 0 0 0 0</pose>
+      <include>
+        <uri>model://rectangle_large_orange</uri>
+      </include>
+      
+    </model>
+
+    <model name="pink_large_rectangle" >
+      <pose>-12 -24 0 0 0 0</pose>
+      <include>
+        <uri>model://rectangle_large_pink</uri>
+      </include>
+      
+    </model>
+
+    <model name="cyan_large_rectangle" >
+      <pose>-3 15 0 0 0 0</pose>
+      <include>
+        <uri>model://rectangle_large_cyan</uri>
+      </include>
+     
+    </model>
+
+     <model name="red_large_rectangle" >
+      <pose>37 -25 0 0 0 0</pose>
+      <include>
+        <uri>model://rectangle_large_red</uri>
+      </include>
+     
+    </model>
+
+    <model name="green_small_object" >
+      <pose>-7 -12 0 0 0 0</pose>
+      <include>
+        <uri>model://object_small_green</uri>
+      </include>
+
+    </model>
+
+    <model name="blue_small_object" >
+      <pose>20 21 0 0 0 0</pose>
+      <include>
+        <uri>model://object_small_blue</uri>
+      </include>
+
+    </model>
+
+    <model name="yellow_small_object" >
+      <pose>21 -25 0 0 0 0</pose>
+      <include>
+        <uri>model://object_small_yellow</uri>
+      </include>
+
+    </model>
+
+    <model name="orange_small_object" >
+      <pose>-13 5 0 0 0 0</pose>
+      <include>
+        <uri>model://object_small_orange</uri>
+      </include>
+
+    </model>
+
+    <model name="pink_small_object" >
+      <pose>30 20 0 0 0 0</pose>
+      <include>
+        <uri>model://object_small_pink</uri>
+      </include>
+
+    </model>
+
+    <model name="cyan_small_object" >
+      <pose>-20 12 0 0 0 0</pose>
+      <include>
+        <uri>model://object_small_cyan</uri>
+      </include>
+      
+    </model>
+    
+    <model name="red_small_object" >
+      <pose>-20 -12 0 0 0 0</pose>
+      <include>
+        <uri>model://object_small_red</uri>
+      </include>
+      
+    </model>
+
+
+    <model name="dropping_zone_box">
+      <pose>-22.5 0 0 0 0 0</pose>
+      <include>
+        <uri>model://dropping_zone_box</uri>
+      </include>
+    </model>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>159.908 -1.39949 83.4967 0 0.559643 -3.11099</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>
